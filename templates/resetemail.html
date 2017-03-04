@@ -1,0 +1,25 @@
+<ion-nav-bar ng-controller="NavController">
+
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear ion-ios-arrow-back" ng-click="GoBack()" style="color: black"></button>
+  </ion-nav-buttons>
+
+  <ion-nav-title>
+    Reset Password
+  </ion-nav-title>
+</ion-nav-bar>
+<ion-view>
+  <ion-content class="has-header" scroll="false">
+    <form>
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="email" ng-model="loginData">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit" ng-click="doResetemail(loginData)">Reset password</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
